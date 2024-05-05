@@ -1,3 +1,4 @@
+#dp
 def solution(money):
     dp1 = [0] * len(money)
     dp1[0] = money[0]
