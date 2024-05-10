@@ -6,12 +6,12 @@ def solution(cards):
             tmp = []
             while v not in tmp:
                 tmp.append(v)
-                v = cards[v-1]
                 visited[v] = True
+                v = cards[v-1]
+                
             answer.append(len(tmp))
     if answer[0] == len(cards):
         return 0
     else:
         answer.sort(reverse=True)
     return answer[0] * answer[1]
-    return answer
