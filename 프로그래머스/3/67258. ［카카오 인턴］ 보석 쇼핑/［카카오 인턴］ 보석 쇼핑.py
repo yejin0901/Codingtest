@@ -1,3 +1,4 @@
+#
 def solution(gems):
     answer = [0, len(gems)]
     size = len(set(gems))  
